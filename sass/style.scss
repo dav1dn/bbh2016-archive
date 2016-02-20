@@ -17,6 +17,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: $black;
     margin: 0;
+    overflow-x: hidden;
 
     @include media(max-width 640px) {
         font-size: 10pt;
@@ -129,6 +130,9 @@ body {
 
 .hipster.top { transform: rotate(-1.5deg); top: -30px; }
 .hipster.bottom { transform: rotate(-1.5deg); bottom: -20px; }
+.hipster.top.reverse { top: -30px; transform: rotate(1.5deg); }
+.hipster.bottom.reverse { bottom: -20px; transform: rotate(1.5deg);}
+
 #about {
     background-color: $accent-lblu;
 }
@@ -159,14 +163,27 @@ body {
     }
 }
 
-#bitcoin {
-    background-color: $accent-dblue;
-}
 
 #bitcoin-text {
     @include span-columns(11);
-    color: #f7f7f7;
+    color: $black;
     font-size: modular-scale(1);
+}
+
+#faq { 
+    background-color: $accent-dblue;
+}
+
+.faq-column {
+    @include span-columns(6);
+    @include media($mobile) {
+        @include span-columns(6);
+    }
+}
+.faq-item {
+    margin-top: 45px;}
+.faq-item h3 {
+    margin: 0;
 }
 /*#about-affs {*/
     /*@include span-columns(12);*/
