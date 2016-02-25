@@ -36,6 +36,11 @@ body a:hover {
 }
 
 /* line 30, ../sass/style.scss */
+#body-wrapper {
+  overflow-x: hidden;
+}
+
+/* line 31, ../sass/style.scss */
 #navbar {
   display: none;
   width: 100%;
@@ -47,25 +52,25 @@ body a:hover {
   transition: 0.3s linear;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 #nav {
   width: 80%;
   position: relative;
   margin: 0 auto;
 }
 
-/* line 42, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 #nav-items {
   margin: 0;
   float: right;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 #navbar-logo {
   float: left;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 .nav-item {
   display: block;
   margin-left: 1.5625em;
@@ -73,7 +78,7 @@ body a:hover {
   float: left;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .panel {
   max-width: 60em;
   margin-left: auto;
@@ -87,7 +92,7 @@ body a:hover {
   display: table;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 #splash {
   height: 80vh;
   min-height: 520px;
@@ -110,29 +115,29 @@ body a:hover {
   -ms-flex-align: center;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 #splash-text {
   font-size: 4.76837em;
   font-weight: 600;
 }
 @media screen and (max-width: 640px) {
-  /* line 71, ../sass/style.scss */
+  /* line 72, ../sass/style.scss */
   #splash-text {
     font-size: 2.44141em;
   }
 }
 
-/* line 79, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 #splash-subtext {
   font-size: 1.5625em;
   margin: 1.1em 0;
 }
-/* line 82, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 #splash-subtext a {
   text-decoration: none;
 }
 
-/* line 85, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 #underscore {
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
@@ -162,17 +167,17 @@ body a:hover {
     color: #353535;
   }
 }
-/* line 93, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .panel-container {
   position: relative;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .button-container {
   margin-top: 1.4em;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .button {
   width: 140px;
   color: #fff;
@@ -193,33 +198,33 @@ body a:hover {
   text-decoration: none;
   border-radius: 2px;
 }
-/* line 110, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .button:hover {
   cursor: pointer;
   background-color: #fa9600;
 }
 
-/* line 114, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .text-accent {
   color: #ff9900;
 }
 
-/* line 118, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .text-accent2 {
   color: #005377;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 #anim-text {
   color: #ff9900;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .panel-container {
   padding: 60px 0 80px 0;
 }
 
-/* line 130, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .hipster {
   background: inherit;
   height: 100px;
@@ -229,36 +234,36 @@ body a:hover {
   z-index: 2;
 }
 
-/* line 139, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .hipster.top {
   transform: rotate(-1.5deg);
   top: -30px;
 }
 
-/* line 140, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 .hipster.bottom {
   transform: rotate(-1.5deg);
   bottom: -20px;
 }
 
-/* line 141, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .hipster.top.reverse {
   top: -30px;
   transform: rotate(1.5deg);
 }
 
-/* line 142, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .hipster.bottom.reverse {
-  bottom: -20px;
+  bottom: -25px;
   transform: rotate(1.5deg);
 }
 
-/* line 144, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 #about {
   background-color: #005377;
 }
 
-/* line 149, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 #about-logo {
   float: left;
   display: block;
@@ -270,13 +275,13 @@ body a:hover {
 #about-logo:last-child {
   margin-right: 0;
 }
-/* line 152, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 #about-logo img {
   width: 100%;
   height: auto;
 }
 @media screen and (max-width: 640px) {
-  /* line 149, ../sass/style.scss */
+  /* line 150, ../sass/style.scss */
   #about-logo {
     float: left;
     display: block;
@@ -289,7 +294,7 @@ body a:hover {
   }
 }
 
-/* line 162, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .panel-text {
   float: left;
   display: block;
@@ -306,7 +311,7 @@ body a:hover {
   margin-right: 0;
 }
 @media screen and (max-width: 640px) {
-  /* line 162, ../sass/style.scss */
+  /* line 163, ../sass/style.scss */
   .panel-text {
     float: left;
     display: block;
@@ -319,7 +324,7 @@ body a:hover {
   }
 }
 
-/* line 175, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 #bitcoin-text {
   float: left;
   display: block;
@@ -333,12 +338,12 @@ body a:hover {
   margin-right: 0;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 #faq {
   background-color: #114b5f;
 }
 
-/* line 185, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 .faq-column {
   float: left;
   display: block;
@@ -350,7 +355,7 @@ body a:hover {
   margin-right: 0;
 }
 @media screen and (max-width: 640px) {
-  /* line 185, ../sass/style.scss */
+  /* line 186, ../sass/style.scss */
   .faq-column {
     float: left;
     display: block;
@@ -363,12 +368,12 @@ body a:hover {
   }
 }
 
-/* line 191, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .faq-item {
   margin-top: 45px;
 }
 
-/* line 193, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .faq-item h3 {
   margin: 0;
 }

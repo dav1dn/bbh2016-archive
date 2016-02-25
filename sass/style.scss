@@ -24,9 +24,10 @@ body {
     }
 
     a { color: inherit; text-decoration: none; border-bottom: 1px solid $accent-orng; padding: 2px; transition: .1s linear; 
-        &:hover { font-weight: 400; }
+        &:hover { font-weight: 400; } 
     }
 }
+#body-wrapper { overflow-x: hidden; }
 #navbar {
     display: none;
     width: 100%;
@@ -139,7 +140,7 @@ body {
 .hipster.top { transform: rotate(-1.5deg); top: -30px; }
 .hipster.bottom { transform: rotate(-1.5deg); bottom: -20px; }
 .hipster.top.reverse { top: -30px; transform: rotate(1.5deg); }
-.hipster.bottom.reverse { bottom: -20px; transform: rotate(1.5deg);}
+.hipster.bottom.reverse { bottom: -25px; transform: rotate(1.5deg);}
 
 #about {
     background-color: $accent-lblu;
