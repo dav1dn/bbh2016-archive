@@ -11,6 +11,7 @@ $accent-maroon: #561643;
 
 $modular-scale-ratio: $major-third;
 $mobile: new-breakpoint(max-width 640px 6);
+$hd: new-breakpoint(min-width 2000px 12);
 
 body {
     @include fill-parent;
@@ -150,10 +151,18 @@ body {
     z-index: 2;
 }
 
-.hipster.top { transform: rotate(-1.5deg); top: -30px; }
-.hipster.bottom { transform: rotate(-1.5deg); bottom: -20px; }
-.hipster.top.reverse { top: -30px; transform: rotate(1.5deg); }
-.hipster.bottom.reverse { bottom: -25px; transform: rotate(1.5deg);}
+.hipster.top { transform: rotate(-1.5deg); top: -30px; 
+    @include media($hd) { top: -40px; }
+}
+.hipster.bottom { transform: rotate(-1.5deg); bottom: -20px; 
+    @include media($hd) { bottom: -30px; }
+}
+.hipster.top.reverse { top: -30px; transform: rotate(1.5deg); 
+    @include media($hd) { top: -40px; }
+}
+.hipster.bottom.reverse { bottom: -25px; transform: rotate(1.5deg);
+    @include media($hd) { bottom: -35px; }
+}
 
 #about {
     background-color: $accent-lblu;
