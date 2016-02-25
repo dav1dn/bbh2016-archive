@@ -22,7 +22,6 @@
         var index = 0;
         
         function TypeNextLetter(word, index) {
-            console.log(index);
             if (index >= word.length) {
                 setTimeout(highlightCurrent, Math.random() * 2000 + 2000);
             } else {
