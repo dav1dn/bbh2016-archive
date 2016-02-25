@@ -14,7 +14,7 @@ body {
   font-family: 'Lato', sans-serif;
   color: #353535;
   margin: 0;
-  overflow-x: hidden;
+  position: relative;
 }
 @media screen and (max-width: 640px) {
   /* line 15, ../sass/style.scss */
@@ -22,7 +22,7 @@ body {
     font-size: 10pt;
   }
 }
-/* line 26, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 body a {
   color: inherit;
   text-decoration: none;
@@ -30,17 +30,17 @@ body a {
   padding: 2px;
   transition: .1s linear;
 }
-/* line 27, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 body a:hover {
   font-weight: 400;
 }
 
-/* line 30, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 #body-wrapper {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 #navbar {
   display: none;
   width: 100%;
@@ -52,25 +52,25 @@ body a:hover {
   transition: 0.3s linear;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 #nav {
   width: 80%;
   position: relative;
   margin: 0 auto;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 #nav-items {
   margin: 0;
   float: right;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 #navbar-logo {
   float: left;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .nav-item {
   display: block;
   margin-left: 1.5625em;
@@ -78,7 +78,7 @@ body a:hover {
   float: left;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .panel {
   max-width: 60em;
   margin-left: auto;
@@ -92,7 +92,7 @@ body a:hover {
   display: table;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 #splash {
   height: 80vh;
   min-height: 520px;
@@ -114,30 +114,36 @@ body a:hover {
   align-items: center;
   -ms-flex-align: center;
 }
+@media screen and (max-width: 640px) {
+  /* line 74, ../sass/style.scss */
+  #splash {
+    min-height: 400px;
+  }
+}
 
-/* line 72, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 #splash-text {
   font-size: 4.76837em;
   font-weight: 600;
 }
 @media screen and (max-width: 640px) {
-  /* line 72, ../sass/style.scss */
+  /* line 85, ../sass/style.scss */
   #splash-text {
     font-size: 2.44141em;
   }
 }
 
-/* line 80, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 #splash-subtext {
   font-size: 1.5625em;
   margin: 1.1em 0;
 }
-/* line 83, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 #splash-subtext a {
   text-decoration: none;
 }
 
-/* line 86, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 #underscore {
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
@@ -167,17 +173,17 @@ body a:hover {
     color: #353535;
   }
 }
-/* line 94, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .panel-container {
   position: relative;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 .button-container {
   margin-top: 1.4em;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .button {
   width: 140px;
   color: #fff;
@@ -198,33 +204,33 @@ body a:hover {
   text-decoration: none;
   border-radius: 2px;
 }
-/* line 111, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .button:hover {
   cursor: pointer;
   background-color: #fa9600;
 }
 
-/* line 115, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .text-accent {
   color: #ff9900;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 .text-accent2 {
   color: #005377;
 }
 
-/* line 123, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 #anim-text {
   color: #ff9900;
 }
 
-/* line 127, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .panel-container {
   padding: 60px 0 80px 0;
 }
 
-/* line 131, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .hipster {
   background: inherit;
   height: 100px;
@@ -234,36 +240,36 @@ body a:hover {
   z-index: 2;
 }
 
-/* line 140, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .hipster.top {
   transform: rotate(-1.5deg);
   top: -30px;
 }
 
-/* line 141, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .hipster.bottom {
   transform: rotate(-1.5deg);
   bottom: -20px;
 }
 
-/* line 142, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .hipster.top.reverse {
   top: -30px;
   transform: rotate(1.5deg);
 }
 
-/* line 143, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .hipster.bottom.reverse {
   bottom: -25px;
   transform: rotate(1.5deg);
 }
 
-/* line 145, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 #about {
   background-color: #005377;
 }
 
-/* line 150, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 #about-logo {
   float: left;
   display: block;
@@ -275,13 +281,13 @@ body a:hover {
 #about-logo:last-child {
   margin-right: 0;
 }
-/* line 153, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 #about-logo img {
   width: 100%;
   height: auto;
 }
 @media screen and (max-width: 640px) {
-  /* line 150, ../sass/style.scss */
+  /* line 163, ../sass/style.scss */
   #about-logo {
     float: left;
     display: block;
@@ -294,7 +300,7 @@ body a:hover {
   }
 }
 
-/* line 163, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .panel-text {
   float: left;
   display: block;
@@ -311,7 +317,7 @@ body a:hover {
   margin-right: 0;
 }
 @media screen and (max-width: 640px) {
-  /* line 163, ../sass/style.scss */
+  /* line 176, ../sass/style.scss */
   .panel-text {
     float: left;
     display: block;
@@ -324,7 +330,7 @@ body a:hover {
   }
 }
 
-/* line 176, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 #bitcoin-text {
   float: left;
   display: block;
@@ -338,12 +344,12 @@ body a:hover {
   margin-right: 0;
 }
 
-/* line 182, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 #faq {
   background-color: #114b5f;
 }
 
-/* line 186, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .faq-column {
   float: left;
   display: block;
@@ -355,7 +361,7 @@ body a:hover {
   margin-right: 0;
 }
 @media screen and (max-width: 640px) {
-  /* line 186, ../sass/style.scss */
+  /* line 199, ../sass/style.scss */
   .faq-column {
     float: left;
     display: block;
@@ -368,12 +374,12 @@ body a:hover {
   }
 }
 
-/* line 192, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .faq-item {
   margin-top: 45px;
 }
 
-/* line 194, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 .faq-item h3 {
   margin: 0;
 }
