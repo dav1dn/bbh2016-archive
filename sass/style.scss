@@ -22,6 +22,10 @@ body {
     @include media(max-width 640px) {
         font-size: 10pt;
     }
+
+    a { color: inherit; text-decoration: none; border-bottom: 1px solid $accent-orng; padding: 2px; transition: .1s linear; 
+        &:hover { font-weight: 400; }
+    }
 }
 #navbar {
     display: none;
@@ -75,6 +79,7 @@ body {
 #splash-subtext {
     font-size: modular-scale(2);
     margin: 1.1em 0;
+    a { text-decoration: none; }
 }
 
 #underscore { 
@@ -87,19 +92,22 @@ body {
 }
 .panel-container { position: relative; }
 
-
+.button-container { margin-top: 1.4em; }
 .button {
-    margin-top: 1.4em;
     width: 140px;
+    color: #fff;
+    background-color: $accent-orng;
     @include flex(1 1 auto);
-    padding: 15px;
-    border: 1px solid rgba(0,0,0,0.2);
+    padding: 10px 15px 10px 15px;
+    border: 2px solid $accent-orng;
     text-align: center;
     overflow: hidden;
-    transition: .25s linear;
+    transition: .1s linear;
     font-size: modular-scale(-1);
+    text-decoration: none;
+    border-radius: 2px;
 
-    &:hover { cursor: pointer; background-color: $accent-orng;  }
+    &:hover { cursor: pointer; background-color: #fa9600; } 
 }
 
 
