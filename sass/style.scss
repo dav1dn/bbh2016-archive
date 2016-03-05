@@ -235,6 +235,10 @@ body {
     @include display(flex);
     @include align-items(center);
 }
+
+#mlh-trust-badge {
+    @include media($mobile){ display: none; }
+}
 /*#about-affs {*/
     /*@include span-columns(12);*/
     /*padding-top: 15px;*/

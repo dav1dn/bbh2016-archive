@@ -443,6 +443,13 @@ body a:hover {
   -ms-flex-align: center;
 }
 
+@media screen and (max-width: 640px) {
+  /* line 239, ../sass/style.scss */
+  #mlh-trust-badge {
+    display: none;
+  }
+}
+
 /*#about-affs {*/
 /*@include span-columns(12);*/
 /*padding-top: 15px;*/
