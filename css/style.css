@@ -227,7 +227,7 @@ body a:hover {
 
 /* line 141, ../sass/style.scss */
 .panel-container {
-  padding: 60px 0 80px 0;
+  padding: 35px 0 55px 0;
 }
 
 /* line 145, ../sass/style.scss */
@@ -241,59 +241,64 @@ body a:hover {
 }
 
 /* line 154, ../sass/style.scss */
+.no-hipster {
+  padding: 65px 0 95px 0;
+}
+
+/* line 158, ../sass/style.scss */
 .hipster.top {
   transform: rotate(-1.5deg);
   top: -30px;
 }
 @media screen and (min-width: 2000px) {
-  /* line 154, ../sass/style.scss */
+  /* line 158, ../sass/style.scss */
   .hipster.top {
     top: -40px;
   }
 }
 
-/* line 157, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .hipster.bottom {
   transform: rotate(-1.5deg);
   bottom: -20px;
 }
 @media screen and (min-width: 2000px) {
-  /* line 157, ../sass/style.scss */
+  /* line 161, ../sass/style.scss */
   .hipster.bottom {
     bottom: -30px;
   }
 }
 
-/* line 160, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .hipster.top.reverse {
   top: -30px;
   transform: rotate(1.5deg);
 }
 @media screen and (min-width: 2000px) {
-  /* line 160, ../sass/style.scss */
+  /* line 164, ../sass/style.scss */
   .hipster.top.reverse {
     top: -40px;
   }
 }
 
-/* line 163, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .hipster.bottom.reverse {
   bottom: -25px;
   transform: rotate(1.5deg);
 }
 @media screen and (min-width: 2000px) {
-  /* line 163, ../sass/style.scss */
+  /* line 167, ../sass/style.scss */
   .hipster.bottom.reverse {
     bottom: -35px;
   }
 }
 
-/* line 167, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 #about {
   background-color: #005377;
 }
 
-/* line 172, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 #about-logo {
   float: left;
   display: block;
@@ -305,13 +310,13 @@ body a:hover {
 #about-logo:last-child {
   margin-right: 0;
 }
-/* line 175, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 #about-logo img {
   width: 100%;
   height: auto;
 }
 @media screen and (max-width: 640px) {
-  /* line 172, ../sass/style.scss */
+  /* line 176, ../sass/style.scss */
   #about-logo {
     float: left;
     display: block;
@@ -324,7 +329,7 @@ body a:hover {
   }
 }
 
-/* line 185, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .panel-text {
   float: left;
   display: block;
@@ -341,7 +346,7 @@ body a:hover {
   margin-right: 0;
 }
 @media screen and (max-width: 640px) {
-  /* line 185, ../sass/style.scss */
+  /* line 189, ../sass/style.scss */
   .panel-text {
     float: left;
     display: block;
@@ -354,7 +359,7 @@ body a:hover {
   }
 }
 
-/* line 198, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 #bitcoin-text {
   float: left;
   display: block;
@@ -368,12 +373,12 @@ body a:hover {
   margin-right: 0;
 }
 
-/* line 204, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 #faq {
   background-color: #114b5f;
 }
 
-/* line 208, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .faq-column {
   float: left;
   display: block;
@@ -385,7 +390,7 @@ body a:hover {
   margin-right: 0;
 }
 @media screen and (max-width: 640px) {
-  /* line 208, ../sass/style.scss */
+  /* line 212, ../sass/style.scss */
   .faq-column {
     float: left;
     display: block;
@@ -398,14 +403,44 @@ body a:hover {
   }
 }
 
-/* line 214, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .faq-item {
   margin-top: 45px;
 }
 
-/* line 216, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .faq-item h3 {
   margin: 0;
+}
+
+/* line 225, ../sass/style.scss */
+.partners img {
+  height: 125px;
+  margin: 30px 40px 0 0;
+}
+
+/* line 230, ../sass/style.scss */
+#footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
 }
 
 /*#about-affs {*/

@@ -139,7 +139,7 @@ body {
 }
 
 .panel-container { 
-    padding: 60px 0 80px 0;
+    padding: 35px 0 55px 0;
 }
 
 .hipster { 
@@ -149,6 +149,10 @@ body {
     left: -10px;
     position: absolute;
     z-index: 2;
+}
+
+.no-hipster {
+    padding: 65px 0 95px 0;
 }
 
 .hipster.top { transform: rotate(-1.5deg); top: -30px; 
@@ -215,6 +219,21 @@ body {
     margin-top: 45px;}
 .faq-item h3 {
     margin: 0;
+}
+
+
+.partners img {
+    height: 125px;
+    margin: 30px 40px 0 0;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    min-height: 200px;
+    @include display(flex);
+    @include align-items(center);
 }
 /*#about-affs {*/
     /*@include span-columns(12);*/
