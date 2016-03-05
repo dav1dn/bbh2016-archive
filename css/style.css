@@ -446,7 +446,7 @@ body a:hover {
 @media screen and (max-width: 640px) {
   /* line 239, ../sass/style.scss */
   #mlh-trust-badge {
-    display: none;
+    display: none !important;
   }
 }
 

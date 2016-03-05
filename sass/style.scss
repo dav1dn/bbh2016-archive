@@ -237,7 +237,7 @@ body {
 }
 
 #mlh-trust-badge {
-    @include media($mobile){ display: none; }
+    @include media($mobile){ display: none !important; }
 }
 /*#about-affs {*/
     /*@include span-columns(12);*/
