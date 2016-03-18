@@ -229,8 +229,13 @@ body {
 }
 
 .partners img {
-    height: 110px;
+    height: 90px;
+    padding: 4px; 
     margin: 30px 40px 0 0;
+    @include transition(all 0.2s ease-in-out);
+    &:hover {
+        @include transform(scale(1.2));
+    }
 }
 
 #footer {
