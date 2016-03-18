@@ -221,9 +221,15 @@ body {
     margin: 0;
 }
 
+.schedule-column {
+    @include span-columns(6);
+    padding: 0 20px 0 20px;
+    .time { float: right; color: $accent-orng; }
+    ol { list-style-type: none; padding: 0; }
+}
 
 .partners img {
-    height: 125px;
+    height: 110px;
     margin: 30px 40px 0 0;
 }
 

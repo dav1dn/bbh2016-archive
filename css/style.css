@@ -413,13 +413,36 @@ body a:hover {
   margin: 0;
 }
 
-/* line 225, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
+.schedule-column {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  padding: 0 20px 0 20px;
+}
+/* line 89, /home/david/projects/baybithack2015/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+.schedule-column:last-child {
+  margin-right: 0;
+}
+/* line 227, ../sass/style.scss */
+.schedule-column .time {
+  float: right;
+  color: #ff9900;
+}
+/* line 228, ../sass/style.scss */
+.schedule-column ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* line 231, ../sass/style.scss */
 .partners img {
-  height: 125px;
+  height: 110px;
   margin: 30px 40px 0 0;
 }
 
-/* line 230, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 #footer {
   background-color: #333;
   color: #fff;
@@ -444,7 +467,7 @@ body a:hover {
 }
 
 @media screen and (max-width: 640px) {
-  /* line 239, ../sass/style.scss */
+  /* line 245, ../sass/style.scss */
   #mlh-trust-badge {
     display: none !important;
   }
