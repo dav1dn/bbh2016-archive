@@ -227,9 +227,9 @@ body {
     .time { float: right; color: $accent-orng; }
     ol { list-style-type: none; padding: 0; }
 }
-
+.sponsors { margin-bottom: 40px; }
 .partners img {
-    height: 90px;
+    height: 70px;
     padding: 4px; 
     margin: 30px 40px 0 0;
     @include transition(all 0.2s ease-in-out);
@@ -237,7 +237,13 @@ body {
         @include transform(scale(1.2));
     }
 }
-
+.sponsors img {
+    height: 70px;
+    padding: 4px; 
+    margin: 15px 20px 15px 0px;
+}
+.title { height: 90px !important; }
+.silver { height: 80px !important; }
 #footer {
     background-color: #333;
     color: #fff;
