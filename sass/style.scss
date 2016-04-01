@@ -224,7 +224,12 @@ body {
 .schedule-column {
     @include span-columns(6);
     padding: 0 20px 0 20px;
-    .time { float: right; color: $accent-orng; }
+    .time { float: right; color: $accent-orng; display: inline-block; 
+        @include media($mobile) {
+            display: block;
+            float: none;    
+        }
+    }
     ol { list-style-type: none; padding: 0; }
 }
 .sponsors { margin-bottom: 40px; }
@@ -242,6 +247,10 @@ body {
     padding: 4px; 
     margin: 15px 20px 15px 0px;
 }
+.prize { width: 200px; padding: 5px; margin: 10px; float: left; }
+.prize-title { font-weight: 600; }
+.prize-value { display: block; }
+.prizes { @include row(); }
 .title { height: 90px !important; }
 .silver { height: 80px !important; }
 #footer {
